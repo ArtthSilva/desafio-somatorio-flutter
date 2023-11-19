@@ -1,23 +1,22 @@
+import 'package:escribo_desafio/exceptions/numeros_nao_positivos_exception.dart';
 import 'package:flutter/material.dart';
 
-class CalculoController extends ChangeNotifier{
-   int resultado = 0;
-   bool mostrarResultado = false;
+class CalculoController extends ChangeNotifier {
+  int resultado = 0;
+  bool mostrarResultado = false;
 
-  
-void calculate(int valor) {
-  List<int> numerosDivisiveis = [];
-  if (valor <= 0) {
-    throw Exception('o número tem que ser positivo');
-  }
-  
-  for (var i = 0; i < valor; i++) {
-    if (i % 3 == 0 || i % 5 == 0) {
-      numerosDivisiveis.add(i);
+  void somatorioDivisiveis(int valor) {
+    int soma = 0;
+    if (valor <= 0) {
+      throw NumeroNaoPositivoException('o número tem que ser positivo');
     }
+    for (var i = 0; i < valor; i++) {
+      if (i % 3 == 0 || i % 5 == 0) {
+        soma += i;
+      }
+    }
+    resultado = soma;
+    mostrarResultado = true;
+    notifyListeners();
   }
-  mostrarResultado = true;
- resultado = numerosDivisiveis.fold(0, (antecessor, atual) => antecessor += atual); 
- notifyListeners();   
-}
 }
