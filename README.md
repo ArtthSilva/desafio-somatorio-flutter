@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="assets\images\escribo.jpg" width="100" alt="Logo App Filmes"/>
+    <img src="assets\images\escribo.jpg" width="100" alt="Logo Escribo"/>
 </p>
 
 <h1 align="center">Desafio 1 para vaga desenvolvedor Flutter</h1>
@@ -10,16 +10,16 @@
 
    <p>
 
-   - [📖 Descrição do desafio](#-sobre)
+   - [📖 Detalhes do desafio](#-detalhes-do-desafio)
    - [📱 Preview](#-preview)
    - [🛠️ Funcionalidades e Tecnologias Estudadas](#%EF%B8%8F-funcionalidades-e-tecnologias-estudadas)
    - [🤯 Desafios e Aprendizados ao longo do caminho](#-desafios-e-aprendizados-ao-longo-do-caminho)
-   - [🤔 Como usar](#-como-usar)
+   - [🤔 Como usar](#-como-rodar-e-testar-o-projeto)
    </p>
 
 ---
 
-<h2>📖 Descrição do desafio</h2>
+<h2>📖 Detalhes do desafio</h2>
 
 <p>
     -	Implemente uma função que receba um número inteiro positivo e retorne o somatório de todos os valores inteiros divisíveis por 3 ou 5 que sejam inferiores ao número passado.
@@ -29,8 +29,9 @@
 
 <h2>📱 Preview</h2>
 
-   <p align="center">
-      <img src=".github/job-timer.gif" width="400" alt="Job Timer Demonstração">
+
+https://github.com/ArtthSilva/desafio1-escribo/assets/113397588/ecbe2b06-5f8b-4778-856d-2659d85ac577
+
    </p>
 
 ---
