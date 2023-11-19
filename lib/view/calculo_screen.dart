@@ -1,7 +1,6 @@
 import 'package:escribo_desafio/controller/calculo_controller.dart';
+import 'package:escribo_desafio/widgets/custom_textformfield.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
 class CalculoScreen extends StatelessWidget {
   CalculoScreen({super.key});
 
@@ -22,28 +21,12 @@ class CalculoScreen extends StatelessWidget {
           SizedBox(
             height: MediaQuery.sizeOf(context).height * 0.05,
           ),
-          const Text('Digite um número POSITIVO'),
+          const Text('Digite um número inteiro POSITIVO'),
           Container(
             margin: const EdgeInsets.only(left: 50, right: 50, top: 10),
             child: Form(
               key: _formKey,
-              child: TextFormField(
-                controller: _controller,
-                validator: (String? value) {
-                  if (value == null || value.isEmpty) {
-                    return 'campo não preenchido';
-                  } else if (value == '0') {
-                    return 'o numero 0 não é positivo, ele é neutro';
-                  }
-                  return null;
-                },
-                decoration: const InputDecoration(
-                    border: OutlineInputBorder(), labelText: 'número'),
-                keyboardType: TextInputType.number,
-                inputFormatters: [
-                  FilteringTextInputFormatter.digitsOnly,
-                ],
-              ),
+              child: CustomTextFormFieldWidget(controller: _controller)
             ),
           ),
           Padding(
@@ -51,7 +34,7 @@ class CalculoScreen extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {
                 if (_formKey.currentState?.validate() ?? false) {
-                  controller.calculate(int.parse(_controller.text));
+                  controller.somatorioDivisiveis(int.parse(_controller.text));
                   controller.mostrarResultado = true;
                 }
               },

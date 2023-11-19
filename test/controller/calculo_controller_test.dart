@@ -5,24 +5,24 @@ void main() {
   group('Calculo Controller testes', () {
     test('O resultado do cálculo deve ser 23 para o valor 10', () {
       final calculoController = CalculoController();
-      calculoController.calculate(10);
+      calculoController.somatorioDivisiveis(10);
       expect(calculoController.resultado, 23);
     });
 
     test('O resultado do cálculo deve ser 33 para o valor 11', () {
       final calculoController = CalculoController();
-      calculoController.calculate(11);
+      calculoController.somatorioDivisiveis(11);
       expect(calculoController.resultado, 33);
     });
 
     test('caso o número implementado na função seja negativo ou neutro', () {
       final calculoController = CalculoController();
       expect(
-          () => calculoController.calculate(-5),
+          () => calculoController.somatorioDivisiveis(-5),
           throwsA(isA<Exception>().having(
               (e) => e.toString(),
               'mensagem de exceção',
-              'Exception: o número tem que ser positivo')));
+              'NumeroNaoPositivoException: o número tem que ser positivo')));
     });
   });
 }
