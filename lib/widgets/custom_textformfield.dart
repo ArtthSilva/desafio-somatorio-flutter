@@ -21,7 +21,7 @@ class CustomTextFormFieldWidget extends StatelessWidget {
           border: OutlineInputBorder(), labelText: 'número'),
       keyboardType: TextInputType.number,
       inputFormatters: [
-        FilteringTextInputFormatter.digitsOnly,
+        FilteringTextInputFormatter.digitsOnly, 
       ],
     );
   }

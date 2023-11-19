@@ -6,7 +6,7 @@ void main() {
     test('O resultado do cálculo deve ser 23 para o valor 10', () {
       final calculoController = CalculoController();
       calculoController.somatorioDivisiveis(10);
-      expect(calculoController.resultado, 23);
+      expect(calculoController.resultado, 23); 
     });
 
     test('O resultado do cálculo deve ser 33 para o valor 11', () {

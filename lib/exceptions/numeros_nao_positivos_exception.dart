@@ -10,5 +10,4 @@ sealed class CalculoDeValoresException implements Exception{
 
 class NumeroNaoPositivoException extends CalculoDeValoresException {
   NumeroNaoPositivoException(super.mensagem, [super.stackTrace]);
-  
 }

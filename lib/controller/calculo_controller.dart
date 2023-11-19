@@ -16,7 +16,7 @@ class CalculoController extends ChangeNotifier {
       }
     }
     resultado = soma;
-    mostrarResultado = true;
+    mostrarResultado = true; 
     notifyListeners();
   }
 }
