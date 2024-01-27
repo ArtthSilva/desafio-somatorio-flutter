@@ -1,10 +1,3 @@
-<p align="center">
-    <img src="assets\images\escribo.jpg" width="100" alt="Logo Escribo"/>
-</p>
-
-<h1 align="center">Desafio 1 para vaga desenvolvedor Flutter</h1>
-
-
 
 <h2>Tópicos 📋</h2>
 
@@ -65,10 +58,10 @@ https://github.com/ArtthSilva/desafio1-escribo/assets/113397588/ecbe2b06-5f8b-47
    https://flutter.dev/docs/get-started/install
 
    - Clone o repositório:
-   $ git clone https://github.com/ArtthSilva/desafio1-escribo.git
+   $ git clone https://github.com/ArtthSilva/desafio-somatorio-flutter.git
 
    - Entre no diretório:
-   $ cd desafio1-escribo
+   $ cd desafio-somatorio-flutter
 
    - Instale as dependências (caso não tenha instalado automaticamente):
    $ flutter pub get
